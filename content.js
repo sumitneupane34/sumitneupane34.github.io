@@ -19,11 +19,11 @@ window.PORTFOLIO = {
   }
 };
 
-/*
-  Skill example:
+/
+  Skill:
   { group: 'Software', items: ['Python', 'ORCA', 'Git'] }
 
-  Project example:
+  Project:
   {
     topic: 'Topic name',
     title: 'Project title',
@@ -32,4 +32,4 @@ window.PORTFOLIO = {
     pdf: './assets/project.pdf',
     link: ''
   }
-*/
+/
