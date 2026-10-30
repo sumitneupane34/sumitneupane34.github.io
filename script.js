@@ -10,12 +10,12 @@
     try {const url=new URL(value);return ['https:','http:'].includes(url.protocol)?url.href:'';} catch{return '';}
   };
   function link(text,raw,cls){const href=safeUrl(raw);if(!href)return null;const a=node('a',cls,text);a.href=href;if(/^https?:/.test(href)){a.target='_blank';a.rel='noopener noreferrer';}return a;}
-  const displayName=typeof d.name==='string'&&d.name.trim()?d.name.trim():'Your Name';
+  const displayName=typeof d.name==='string'&&d.name.trim()?d.name.trim():' SUMIT NEUPANE';
   document.title=`${displayName} — Portfolio`;
   byId('heroName').replaceChildren(document.createTextNode(displayName),node('span','green','.'));
   byId('tagline').textContent=d.tagline||'A space to introduce myself and the things I create.';
   byId('introduction').textContent=d.introduction||'';
-  byId('aboutText').textContent=d.about||'Your story goes here. This space is yours to write.';
+  byId('aboutText').textContent=d.about||'I am a B.Sc Chemistry graduate from Mahendra Morang Adarsha Multiple Campus and working towards sustainable materials and environmental remediation.';
   byId('copyright').textContent=`© ${new Date().getFullYear()} ${displayName.toUpperCase()}`;
   const portrait=safeUrl(d.portrait);
   if(portrait){const img=node('img','portrait-photo');img.src=portrait;img.alt=`Portrait of ${displayName}`;img.loading='lazy';byId('portraitBox').append(img);byId('portraitBox').classList.add('has-photo');}
