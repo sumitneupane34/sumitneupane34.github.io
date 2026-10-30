@@ -4,7 +4,7 @@
   For local PDF or image files, upload them into /assets/ and use ./assets/filename.pdf.
 */
 window.PORTFOLIO = {
-  name: 'Sumit Neupane',
+  name: ' SUMIT NEUPANE ',
   tagline: '',
   introduction: '',
   about: '',
